@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Afiah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Patrick+Hand+SC&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="page-viewport">
+        <div class="landing-blue">
+            <div class="main-stack">
+                <!-- ==========================================
+             1. HERO SECTION (6182:2918)
+             ========================================== -->
+                <section class="hero-section">
+                    <!-- AFiAH Vector Letters (6182:2919) -->
+                    <div class="afiah-vectors" aria-hidden="true">
+                        <div class="afiah-vec-h">
+                            <img src="assets/2336484666377e75aed4778ebf995033f5c12205.svg" alt="" />
+                        </div>
+                        <div class="afiah-vec-a2">
+                            <img src="assets/fd76eb0d3fbd999fd071fb6ce1f73339eb17ddfc.svg" alt="" />
+                        </div>
+                        <div class="afiah-vec-i-paw">
+                            <img src="assets/2bf1123e3c13f6d57bb268a49ad224128c546767.svg" alt="" />
+                        </div>
+                        <div class="afiah-vec-i-stem">
+                            <img src="assets/b173620bde2839ea7b9ef54284a91428e01b8969.svg" alt="" />
+                        </div>
+                        <div class="afiah-vec-f">
+                            <img src="assets/5797ed838f018af6b65de151c89ea7009cb1979b.svg" alt="" />
+                        </div>
+                        <div class="afiah-vec-a1">
+                            <img src="assets/8a0f46ea5d076fa7dfdc375c00e189f8ae7c8b72.svg" alt="" />
+                        </div>
+                    </div>
+
+                    <!-- Hero Portrait (6182:2927) -->
+                    <div class="hero-portrait">
+                        <img src="assets/dd492358db1fe404ab76c8bf00fb6f1b4fd65711.png" alt="Afiah" />
+                    </div>
+
+                    <!-- Top Navigation Bar (6182:2929) -->
+                    <header class="navbar">
+                        <a href="#" class="logo-wrapper" aria-label="Afiah Home">
+                            <div class="logo-rotated">
+                                <div class="logo-box">
+                                    <p class="logo-letter font-pesta">A</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <button class="mobile-menu-toggle" type="button" aria-label="Toggle navigation"
+                            aria-expanded="false"
+                            onclick="this.parentElement.classList.toggle('nav-open'); this.setAttribute('aria-expanded', this.parentElement.classList.contains('nav-open'))">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <nav class="nav-links font-consolas"
+                            onclick="if(window.innerWidth <= 900){ this.parentElement.classList.remove('nav-open'); }">
+
+                            <a href="projects.html">Projects</a>
+                            <a href="#experience">Experience</a>
+                            <a href="#services">Services</a>
+                            <a href="#education">Education</a>
+                            <a href="#about">About</a>
+                            <a href="#contact">Contact</a>
+                        </nav>
+
+                        <div class="nav-socials">
+                            <a href="#contact" class="nav-social-btn" aria-label="Facebook">
+                                <img src="assets/379a6d1ee390296889a320eb31389439bdc3be6d.svg" alt="" />
+                            </a>
+                            <a href="#contact" class="nav-social-btn" aria-label="Instagram">
+                                <img src="assets/dbd92464af5bd647336b0ce903cea9cbbe1309cc.svg" alt="" />
+                            </a>
+                            <a href="#contact" class="nav-social-btn" aria-label="LinkedIn">
+                                <img src="assets/37628bb1a5034a90aa3f23297552110ed2be14b8.svg" alt="" />
+                            </a>
+                            <a href="#contact" class="nav-social-btn" aria-label="GitHub">
+                                <img src="assets/c3e5aa4423b067c50cb81807f64a7366447760ed.svg" alt="" />
+                            </a>
+                        </div>
+                    </header>
+
+                    <!-- Hero Bottom Row (6182:2948) -->
+                    <div class="hero-content-row">
+                        <div class="hero-left-col">
+                            <p class="hero-bio font-consolas">I am Afiah . A Computer Science graduate and UI/UX
+                                designer who combines product thinking, visual design, and frontend understanding to
+                                turn complex ideas into intuitive interfaces.</p>
+                            <div class="hero-buttons">
+                                <a href="#contact" class="btn-hero-primary">
+                                    <div class="btn-wrap">
+                                        <span class="font-consolas">View CV</span>
+                                    </div>
+                                    <img class="icon-16" src="assets/c405f4e12895ece82d97416a2575a9c856057e69.svg"
+                                        alt="" />
+                                </a>
+                                <a href="#projects" class="btn-hero-secondary">
+                                    <div class="btn-wrap">
+                                        <span class="font-consolas">View Projects</span>
+                                    </div>
+                                    <img class="icon-16" src="assets/ccdca1ae5e6e2ea645a80a20722503658cf8db4c.svg"
+                                        alt="" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="hero-right-col">
+                            <div class="hero-stats-box">
+                                <div class="hero-stats-inner">
+                                    <div class="stat-item">
+                                        <div class="stat-badge">
+                                            <span class="font-pesta">15+</span>
+                                        </div>
+                                        <p class="stat-label font-consolas">Projects</p>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-badge">
+                                            <span class="font-pesta">1.5+ years </span>
+                                        </div>
+                                        <p class="stat-label font-consolas">Experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-blanket-cat" aria-hidden="true">
+                                <img src="assets/352e4ea906d5a67073edcb6e50aeff9d0504787e.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+             2. PROJECTS SECTION (6182:2972)
+             ========================================== -->
+                <section id="projects" class="projects-section">
+                    <div class="section-header-bar border-light-blue reveal-on-scroll">
+                        <p class="section-tag font-consolas" style="color: #cbe7f2; text-transform: capitalize;">
+                            [Projects]</p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <!-- Row 1 (6182:2976) -->
+                        <div class="projects-row">
+                            <!-- Card 1 -->
+                            <article class="project-card reveal-on-scroll">
+                                <div class="project-thumb">
+                                    <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                        alt="Shoukhin Haat" />
+                                    <div class="project-hover-overlay">
+                                        <div class="project-hover-actions">
+                                            <div class="project-action-btn" title="Live Link">
+                                                <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                    alt="Link" />
+                                            </div>
+                                            <div class="project-action-btn" title="Figma Design">
+                                                <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                    alt="Figma" />
+                                            </div>
+                                            <div class="project-action-btn" title="View Prototype">
+                                                <img src="assets/prototype.svg" alt="Prototype" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-titles">
+                                        <p class="project-name font-pesta">Shoukhin Haat</p>
+                                        <p class="project-category font-consolas">E-commerce Platform</p>
+                                    </div>
+                                    <div class="project-badges">
+                                        <div class="project-badge"><span class="font-consolas">Wireframing</span></div>
+                                        <div class="project-badge"><span class="font-consolas">UI/UX Design</span></div>
+                                        <div class="project-badge"><span class="font-consolas">Web development</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Card 2 -->
+                            <article class="project-card reveal-on-scroll">
+                                <div class="project-thumb">
+                                    <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                        alt="Shoukhin Haat" />
+                                    <div class="project-hover-overlay">
+                                        <div class="project-hover-actions">
+                                            <div class="project-action-btn" title="Live Link">
+                                                <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                    alt="Link" />
+                                            </div>
+                                            <div class="project-action-btn" title="Figma Design">
+                                                <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                    alt="Figma" />
+                                            </div>
+                                            <div class="project-action-btn" title="View Prototype">
+                                                <img src="assets/prototype.svg" alt="Prototype" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-titles">
+                                        <p class="project-name font-pesta">Shoukhin Haat</p>
+                                        <p class="project-category font-consolas">E-commerce Platform</p>
+                                    </div>
+                                    <div class="project-badges">
+                                        <div class="project-badge"><span class="font-consolas">Wireframing</span></div>
+                                        <div class="project-badge"><span class="font-consolas">UI/UX Design</span></div>
+                                        <div class="project-badge"><span class="font-consolas">Web development</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Card 3 -->
+                            <article class="project-card reveal-on-scroll">
+                                <div class="project-thumb">
+                                    <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                        alt="Shoukhin Haat" />
+                                    <div class="project-hover-overlay">
+                                        <div class="project-hover-actions">
+                                            <div class="project-action-btn" title="Live Link">
+                                                <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                    alt="Link" />
+                                            </div>
+                                            <div class="project-action-btn" title="Figma Design">
+                                                <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                    alt="Figma" />
+                                            </div>
+                                            <div class="project-action-btn" title="View Prototype">
+                                                <img src="assets/prototype.svg" alt="Prototype" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-titles">
+                                        <p class="project-name font-pesta">Shoukhin Haat</p>
+                                        <p class="project-category font-consolas">E-commerce Platform</p>
+                                    </div>
+                                    <div class="project-badges">
+                                        <div class="project-badge"><span class="font-consolas">Wireframing</span></div>
+                                        <div class="project-badge"><span class="font-consolas">UI/UX Design</span></div>
+                                        <div class="project-badge"><span class="font-consolas">Web development</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Row 2 (6182:3021) -->
+                        <div class="projects-row">
+                            <!-- Card 4 -->
+                            <article class="project-card reveal-on-scroll">
+                                <div class="project-thumb">
+                                    <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                        alt="Shoukhin Haat" />
+                                    <div class="project-hover-overlay">
+                                        <div class="project-hover-actions">
+                                            <div class="project-action-btn" title="Live Link">
+                                                <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                    alt="Link" />
+                                            </div>
+                                            <div class="project-action-btn" title="Figma Design">
+                                                <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                    alt="Figma" />
+                                            </div>
+                                            <div class="project-action-btn" title="View Prototype">
+                                                <img src="assets/prototype.svg" alt="Prototype" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-titles">
+                                        <p class="project-name font-pesta">Shoukhin Haat</p>
+                                        <p class="project-category font-consolas">E-commerce Platform</p>
+                                    </div>
+                                    <div class="project-badges">
+                                        <div class="project-badge"><span class="font-consolas">Wireframing</span></div>
+                                        <div class="project-badge"><span class="font-consolas">UI/UX Design</span></div>
+                                        <div class="project-badge"><span class="font-consolas">Web development</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Card 5 -->
+                            <article class="project-card reveal-on-scroll">
+                                <div class="project-thumb">
+                                    <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                        alt="Shoukhin Haat" />
+                                    <div class="project-hover-overlay">
+                                        <div class="project-hover-actions">
+                                            <div class="project-action-btn" title="Live Link">
+                                                <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                    alt="Link" />
+                                            </div>
+                                            <div class="project-action-btn" title="Figma Design">
+                                                <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                    alt="Figma" />
+                                            </div>
+                                            <div class="project-action-btn" title="View Prototype">
+                                                <img src="assets/prototype.svg" alt="Prototype" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-titles">
+                                        <p class="project-name font-pesta">Shoukhin Haat</p>
+                                        <p class="project-category font-consolas">E-commerce Platform</p>
+                                    </div>
+                                    <div class="project-badges">
+                                        <div class="project-badge"><span class="font-consolas">Wireframing</span></div>
+                                        <div class="project-badge"><span class="font-consolas">UI/UX Design</span></div>
+                                        <div class="project-badge"><span class="font-consolas">Web development</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Card 6 -->
+                            <article class="project-card reveal-on-scroll">
+                                <div class="project-thumb">
+                                    <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                        alt="Shoukhin Haat" />
+                                    <div class="project-hover-overlay">
+                                        <div class="project-hover-actions">
+                                            <div class="project-action-btn" title="Live Link">
+                                                <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                    alt="Link" />
+                                            </div>
+                                            <div class="project-action-btn" title="Figma Design">
+                                                <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                    alt="Figma" />
+                                            </div>
+                                            <div class="project-action-btn" title="View Prototype">
+                                                <img src="assets/prototype.svg" alt="Prototype" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-titles">
+                                        <p class="project-name font-pesta">Shoukhin Haat</p>
+                                        <p class="project-category font-consolas">E-commerce Platform</p>
+                                    </div>
+                                    <div class="project-badges">
+                                        <div class="project-badge"><span class="font-consolas">Wireframing</span></div>
+                                        <div class="project-badge"><span class="font-consolas">UI/UX Design</span></div>
+                                        <div class="project-badge"><span class="font-consolas">Web development</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Row 3 (6182:3061) -->
+                        <div class="projects-row">
+                            <!-- Card 7 -->
+                            <article class="project-card reveal-on-scroll">
+                                <div class="project-thumb">
+                                    <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                        alt="Shoukhin Haat" />
+                                    <div class="project-hover-overlay">
+                                        <div class="project-hover-actions">
+                                            <div class="project-action-btn" title="Live Link">
+                                                <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                    alt="Link" />
+                                            </div>
+                                            <div class="project-action-btn" title="Figma Design">
+                                                <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                    alt="Figma" />
+                                            </div>
+                                            <div class="project-action-btn" title="View Prototype">
+                                                <img src="assets/prototype.svg" alt="Prototype" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-titles">
+                                        <p class="project-name font-pesta">Shoukhin Haat</p>
+                                        <p class="project-category font-consolas">E-commerce Platform</p>
+                                    </div>
+                                    <div class="project-badges">
+                                        <div class="project-badge"><span class="font-consolas">Wireframing</span></div>
+                                        <div class="project-badge"><span class="font-consolas">UI/UX Design</span></div>
+                                        <div class="project-badge"><span class="font-consolas">Web development</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Card 8 -->
+                            <article class="project-card reveal-on-scroll">
+                                <div class="project-thumb">
+                                    <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                        alt="Shoukhin Haat" />
+                                    <div class="project-hover-overlay">
+                                        <div class="project-hover-actions">
+                                            <div class="project-action-btn" title="Live Link">
+                                                <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                    alt="Link" />
+                                            </div>
+                                            <div class="project-action-btn" title="Figma Design">
+                                                <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                    alt="Figma" />
+                                            </div>
+                                            <div class="project-action-btn" title="View Prototype">
+                                                <img src="assets/prototype.svg" alt="Prototype" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-titles">
+                                        <p class="project-name font-pesta">Shoukhin Haat</p>
+                                        <p class="project-category font-consolas">E-commerce Platform</p>
+                                    </div>
+                                    <div class="project-badges">
+                                        <div class="project-badge"><span class="font-consolas">Wireframing</span></div>
+                                        <div class="project-badge"><span class="font-consolas">UI/UX Design</span></div>
+                                        <div class="project-badge"><span class="font-consolas">Web development</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Card 9 -->
+                            <article class="project-card reveal-on-scroll">
+                                <div class="project-thumb">
+                                    <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                        alt="Shoukhin Haat" />
+                                    <div class="project-hover-overlay">
+                                        <div class="project-hover-actions">
+                                            <div class="project-action-btn" title="Live Link">
+                                                <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                    alt="Link" />
+                                            </div>
+                                            <div class="project-action-btn" title="Figma Design">
+                                                <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                    alt="Figma" />
+                                            </div>
+                                            <div class="project-action-btn" title="View Prototype">
+                                                <img src="assets/prototype.svg" alt="Prototype" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <div class="project-titles">
+                                        <p class="project-name font-pesta">Shoukhin Haat</p>
+                                        <p class="project-category font-consolas">E-commerce Platform</p>
+                                    </div>
+                                    <div class="project-badges">
+                                        <div class="project-badge"><span class="font-consolas">Wireframing</span></div>
+                                        <div class="project-badge"><span class="font-consolas">UI/UX Design</span></div>
+                                        <div class="project-badge"><span class="font-consolas">Web development</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <a href="projects.html" class="btn-more-projects reveal-on-scroll">
+                        <div class="btn-wrap">
+                            <span class="font-consolas">View More Projects </span>
+                        </div>
+                        <img class="icon-16" src="assets/4a2f6b8ef45b6190c49dfd188800f3019b7cf63b.svg" alt="" />
+                    </a>
+                </section>
+
+                <!-- ==========================================
+             3. ABOUT ME SECTION (6182:3105)
+             ========================================== -->
+                <section id="about" class="about-section">
+                    <div class="section-header-bar border-dark-teal reveal-on-scroll">
+                        <p class="section-tag font-consolas" style="color: #223f45; text-transform: capitalize;">[ABOUT
+                            ME]</p>
+                        <div class="about-yarn-cat" aria-hidden="true">
+                            <div class="about-yarn-cat-track">
+                                <img src="assets/9d1c1b69659d24390e7d93d7a9f0531502767546.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text font-pesta reveal-on-scroll">
+                        <p>I'm a creative tech enthusiast, passionate about UI/UX design.</p>
+                        <p>I love blending creativity with technology to craft intuitive, visually appealing, and user
+                            centered digital experiences.</p>
+                        <p>With a keen eye for detail and a curiosity for learning, I enjoy turning ideas into
+                            meaningful digital solutions.</p>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+             4. WHAT CAN I DO SECTION (6182:3110)
+             ========================================== -->
+                <section id="services" class="services-section">
+                    <div class="section-header-bar border-off-white reveal-on-scroll">
+                        <p class="section-tag font-consolas" style="color: #f2f8fa; text-transform: capitalize;">[WHAT
+                            CAN I DO]</p>
+                    </div>
+
+                    <div class="services-grid">
+                        <!-- Service 01 -->
+                        <div class="service-card reveal-on-scroll">
+                            <div class="service-card-top">
+                                <p class="service-number font-consolas">[01]</p>
+                                <div class="service-union-img">
+                                    <img src="assets/8d192eab474906186752f9c6993be056a466b8b7.png" alt="Web Design" />
+                                </div>
+                            </div>
+                            <div class="service-card-bottom">
+                                <p class="service-title font-pesta">Website Design</p>
+                                <p class="service-desc font-consolas">Beautiful,responsive websites built around your
+                                    brand and users.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service 02 -->
+                        <div class="service-card reveal-on-scroll">
+                            <div class="service-card-top">
+                                <p class="service-number font-consolas">[02]</p>
+                                <div class="service-union-img">
+                                    <img src="assets/099b36fa4eb304870fca7939dcc92176238569aa.png" alt="App Design" />
+                                </div>
+                            </div>
+                            <div class="service-card-bottom">
+                                <p class="service-title font-pesta">Mobile App Design</p>
+                                <p class="service-desc font-consolas">Intuitive mobile experiences that make every
+                                    interaction feel effortless.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service 03 -->
+                        <div class="service-card reveal-on-scroll">
+                            <div class="service-card-top">
+                                <p class="service-number font-consolas">[03]</p>
+                                <div class="service-union-img h-184">
+                                    <img src="assets/3741d258593f03934b9f42f6c91d06fa1350ad89.png" alt="Wire Frame" />
+                                </div>
+                            </div>
+                            <div class="service-card-bottom">
+                                <p class="service-title font-pesta">Wire framing</p>
+                                <p class="service-desc font-consolas">Clear layouts that turn ideas into structured user
+                                    journeys.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service 04 -->
+                        <div class="service-card reveal-on-scroll">
+                            <div class="service-card-top">
+                                <p class="service-number font-consolas">[04]</p>
+                                <div class="service-union-img">
+                                    <img src="assets/c0951a9b3ee1a1673d3b985c5fe838f39ab523a1.png" alt="Prototyping" />
+                                </div>
+                            </div>
+                            <div class="service-card-bottom">
+                                <p class="service-title font-pesta">Prototyping</p>
+                                <p class="service-desc font-consolas">Interactive previews that bring your product
+                                    experience to life.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+             5. EXPERIENCE SECTION (6182:3150)
+             ========================================== -->
+                <section id="experience" class="experience-section">
+                    <div class="section-header-bar border-light-blue reveal-on-scroll">
+                        <p class="section-tag font-consolas" style="color: #cbe7f2; text-transform: capitalize;">
+                            [EXPERIENCE]</p>
+                    </div>
+
+                    <div class="experience-timeline">
+                        <div class="timeline-vertical-line" aria-hidden="true"></div>
+
+                        <div class="timeline-rows">
+                            <!-- Experience 1: FB International BD -->
+                            <div class="timeline-row reveal-on-scroll">
+                                <div class="timeline-left">
+                                    <div class="timeline-company-and-line">
+                                        <div class="company-fb">
+                                            <div class="company-fb-logo">
+                                                <img src="assets/32ad97dc9717f40fc12411da8b60d646655de9aa.png"
+                                                    alt="FB International BD" />
+                                            </div>
+                                            <p class="company-fb-name font-inter-extrabold">FB International BD</p>
+                                        </div>
+                                        <div class="timeline-horiz-line"></div>
+                                    </div>
+                                    <div class="timeline-dot">
+                                        <img src="assets/e6513227ae7ce24a3e47aac7be5d769d859b27ae.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="timeline-right">
+                                    <div class="timeline-role-box">
+                                        <p class="timeline-date font-consolas">Feb 2026 – Ongoing</p>
+                                        <p class="timeline-role font-pesta">UI/UX Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Experience 2: Eutropia -->
+                            <div class="timeline-row reveal-on-scroll">
+                                <div class="timeline-left">
+                                    <div class="timeline-company-and-line">
+                                        <div class="company-eutropia-logo">
+                                            <img src="assets/0e739bd0e7eae255d11048763316aff8a2400371.png"
+                                                alt="Eutropia" />
+                                        </div>
+                                        <div class="timeline-horiz-line"></div>
+                                    </div>
+                                    <div class="timeline-dot">
+                                        <img src="assets/e6513227ae7ce24a3e47aac7be5d769d859b27ae.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="timeline-right">
+                                    <div class="timeline-role-box">
+                                        <p class="timeline-date font-consolas">July 2025 – Dec 2025</p>
+                                        <p class="timeline-role font-pesta">UI/UX Designer intern</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Experience 3: Deshileague -->
+                            <div class="timeline-row reveal-on-scroll">
+                                <div class="timeline-left">
+                                    <div class="timeline-company-and-line">
+                                        <div class="company-deshi-logo">
+                                            <img src="assets/0b0b4009b81fe6b33bb119ccbadea3686397eb5c.png"
+                                                alt="Deshileague" />
+                                        </div>
+                                        <div class="timeline-horiz-line"></div>
+                                    </div>
+                                    <div class="timeline-dot">
+                                        <img src="assets/e6513227ae7ce24a3e47aac7be5d769d859b27ae.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="timeline-right">
+                                    <div class="timeline-role-box">
+                                        <p class="timeline-date font-consolas">July 2025 – Sept 2025</p>
+                                        <p class="timeline-role font-pesta">UI/UX Designer intern</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Guilty Kitten Coffee Spill (6182:3428) anchored to Experience bottom border -->
+                    <div class="guilty-kitten" aria-hidden="true">
+                        <img src="assets/1487e28fa9643c1a8495d31372fd2f5f5fdbfe43.png" alt="" />
+                    </div>
+                </section>
+
+                <!-- ==========================================
+             6. TOOLS & TECHNICAL FOUNDATION (6182:3188)
+             ========================================== -->
+                <section class="tools-section">
+                    <div class="section-header-bar border-dark-teal reveal-on-scroll">
+                        <p class="section-tag font-consolas" style="color: #223f45;"><span>[</span><span
+                                style="text-transform: uppercase;">Tools &amp; technical foundation</span><span>]</span>
+                        </p>
+                    </div>
+
+                    <div class="tools-columns">
+                        <!-- Left Column: Tools & technical foundation -->
+                        <div class="tools-col reveal-on-scroll">
+                            <p class="tools-col-title font-pesta">Tools &amp; technical foundation</p>
+                            <div class="tools-badges-rows">
+                                <!-- Row 1 -->
+                                <div class="tools-badge-row">
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">Figma</span></div>
+                                        <div class="tool-icon-24"><img
+                                                src="assets/c02946dda5b02789ad5135f16e8262a59f92647a.svg" alt="Figma" />
+                                        </div>
+                                    </div>
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">Canva</span></div>
+                                        <div class="tool-icon-canva"><img
+                                                src="assets/6e1ed2979d08756b430cf80009fc34e37174161d.svg" alt="Canva" />
+                                        </div>
+                                    </div>
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">HTML</span></div>
+                                        <div class="tool-icon-24"><img
+                                                src="assets/3ff8908ad58db770ba41fd299453987b2afc63cc.svg" alt="HTML5" />
+                                        </div>
+                                    </div>
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">CSS</span></div>
+                                        <div class="tool-icon-24"><img
+                                                src="assets/0f974aef676d82603d009db29197f46f3fa1f1de.svg" alt="CSS3" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Row 2 -->
+                                <div class="tools-badge-row">
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">Python</span></div>
+                                        <div class="tool-icon-24"><img
+                                                src="assets/17394c0e1e61a6d8220943daf4dd6215b411a75d.svg"
+                                                alt="Python" /></div>
+                                    </div>
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">Django</span></div>
+                                        <div class="tool-icon-24"><img
+                                                src="assets/17394c0e1e61a6d8220943daf4dd6215b411a75d.svg"
+                                                alt="Django" /></div>
+                                    </div>
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">Bootstrap</span></div>
+                                        <div class="tool-icon-24"><img
+                                                src="assets/17394c0e1e61a6d8220943daf4dd6215b411a75d.svg"
+                                                alt="Bootstrap" /></div>
+                                    </div>
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span class="tool-pill-text font-consolas">Git /
+                                                GitHub</span></div>
+                                        <div class="tool-icon-24"><img
+                                                src="assets/4c8a572e42c40b5da6945e653aca69c0c53489a9.svg"
+                                                alt="GitHub" /></div>
+                                    </div>
+                                </div>
+
+                                <!-- Row 3 -->
+                                <div class="tools-badge-row">
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">SQL</span></div>
+                                        <div class="tool-icon-24"><img
+                                                src="assets/c02946dda5b02789ad5135f16e8262a59f92647a.svg" alt="SQL" />
+                                        </div>
+                                    </div>
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">Java</span></div>
+                                        <div class="tool-icon-24"><img
+                                                src="assets/70946047bb76deccda45d86c6b8f1b354c807c48.svg" alt="Java" />
+                                        </div>
+                                    </div>
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">C/C++</span></div>
+                                        <div class="tool-icon-24"><img
+                                                src="assets/afaa2c8ac211b61c45fbed8683f28e7caf163824.svg" alt="C/C++" />
+                                        </div>
+                                    </div>
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span class="tool-pill-text font-consolas">Adobe
+                                                Illustrator</span></div>
+                                        <div class="tool-icon-24">
+                                            <img src="assets/bfbdc28d09bf1141f1a06b5226b248e015d3b2c4.svg" alt="" />
+                                            <div class="tool-icon-ai-letters">
+                                                <img src="assets/7ff050b098d0f97c33c07048571ccf2c585ee8ec.svg"
+                                                    alt="Ai" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Row 4 -->
+                                <div class="tools-badge-row">
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">Oracle</span></div>
+                                        <div class="tool-icon-oracle"><img
+                                                src="assets/4cba0281180925056241ac80e02d8a0ba19a9b4b.svg"
+                                                alt="Oracle" /></div>
+                                    </div>
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">C/C++</span></div>
+                                        <div class="tool-icon-24"><img
+                                                src="assets/afaa2c8ac211b61c45fbed8683f28e7caf163824.svg" alt="C/C++" />
+                                        </div>
+                                    </div>
+                                    <div class="tool-pill">
+                                        <div class="tool-pill-wrap"><span
+                                                class="tool-pill-text font-consolas">SQL</span></div>
+                                        <div class="tool-icon-24"><img
+                                                src="assets/c02946dda5b02789ad5135f16e8262a59f92647a.svg" alt="SQL" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Vertical Divider -->
+                        <div class="tools-divider-vertical" aria-hidden="true"></div>
+
+                        <!-- Right Column: Design & product practice -->
+                        <div class="tools-col reveal-on-scroll">
+                            <p class="tools-col-title font-pesta">Design &amp; product practice</p>
+                            <div class="practice-list">
+                                <div class="practice-item">
+                                    <div class="practice-item-inner">
+                                        <div class="tool-icon-24"><img
+                                                src="assets/2a6b4cf5423fb1aadf8fc11a10663936fa474928.svg" alt="" />
+                                        </div>
+                                        <p class="practice-text font-consolas">UX flows, wireframing &amp; prototyping
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="practice-item">
+                                    <div class="practice-item-inner">
+                                        <div class="tool-icon-24"><img
+                                                src="assets/2a6b4cf5423fb1aadf8fc11a10663936fa474928.svg" alt="" />
+                                        </div>
+                                        <p class="practice-text font-consolas">Responsive web &amp; mobile UI</p>
+                                    </div>
+                                </div>
+                                <div class="practice-item">
+                                    <div class="practice-item-inner">
+                                        <div class="tool-icon-24"><img
+                                                src="assets/2a6b4cf5423fb1aadf8fc11a10663936fa474928.svg" alt="" />
+                                        </div>
+                                        <p class="practice-text font-consolas">Visual identity &amp; graphic design</p>
+                                    </div>
+                                </div>
+                                <div class="practice-item">
+                                    <div class="practice-item-inner">
+                                        <div class="tool-icon-24"><img
+                                                src="assets/2a6b4cf5423fb1aadf8fc11a10663936fa474928.svg" alt="" />
+                                        </div>
+                                        <p class="practice-text font-consolas">Research-informed iteration</p>
+                                    </div>
+                                </div>
+                                <div class="practice-item">
+                                    <div class="practice-item-inner">
+                                        <div class="tool-icon-24"><img
+                                                src="assets/2a6b4cf5423fb1aadf8fc11a10663936fa474928.svg" alt="" />
+                                        </div>
+                                        <p class="practice-text font-consolas">Project planning &amp; documentation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+             7. EDUCATION SECTION (6182:3315)
+             ========================================== -->
+                <section id="education" class="education-section">
+                    <div class="section-header-bar border-off-white reveal-on-scroll">
+                        <p class="section-tag font-consolas" style="color: #f2f8fa; text-transform: capitalize;">
+                            [EDUCATION]</p>
+                    </div>
+
+                    <div class="education-list">
+                        <!-- Row 1: UAP -->
+                        <div class="education-row reveal-on-scroll">
+                            <div class="education-left">
+                                <div class="edu-logo">
+                                    <img src="assets/a007c3e977a3ff1eb98fe42444d496fc3e22ef91.png"
+                                        alt="University of Asia Pacific" />
+                                </div>
+                                <div class="edu-details">
+                                    <p class="edu-school font-pesta">University of Asia Pacific</p>
+                                    <p class="edu-degree font-consolas">B.Sc. in Computer Science and Engineering · CGPA
+                                        3.90</p>
+                                </div>
+                            </div>
+                            <p class="edu-year font-consolas">Jan 2022 — Dec 2025</p>
+                        </div>
+
+                        <!-- Row 2: BMARPC -->
+                        <div class="education-row bordered reveal-on-scroll">
+                            <div class="education-left edu-left-bmarpc">
+                                <div class="edu-logo">
+                                    <img src="assets/098912fc83313ee600f1dab5c6ace32b6be115f7.png"
+                                        alt="Birshreshtha Munshi Abdur Rouf Public College" />
+                                </div>
+                                <div class="edu-details">
+                                    <p class="edu-school font-pesta">Birshreshtha Munshi Abdur Rouf Public College</p>
+                                    <p class="edu-degree edu-degree-bmarpc font-consolas">Higher Secondary School
+                                        Certificate · GPA 5.00</p>
+                                </div>
+                            </div>
+                            <p class="edu-year font-consolas">2020</p>
+                        </div>
+
+                        <!-- Row 3: BCSIR -->
+                        <div class="education-row reveal-on-scroll">
+                            <div class="education-left">
+                                <div class="edu-logo">
+                                    <img src="assets/b105ad9d3996c9c3abd0263cdb72c7210ddcadb0.png"
+                                        alt="BCSIR High School" />
+                                </div>
+                                <div class="edu-details">
+                                    <p class="edu-school font-pesta">BCSIR High School</p>
+                                    <p class="edu-degree font-consolas">Secondary School Certificate · GPA 5.00</p>
+                                </div>
+                            </div>
+                            <p class="edu-year font-consolas">2018</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+             8. GET IN TOUCH SECTION (6182:3340)
+             ========================================== -->
+                <section id="contact" class="contact-section">
+                    <p class="contact-watermark font-pesta" aria-hidden="true">Afiah</p>
+
+                    <div class="contact-top-block reveal-on-scroll">
+                        <h2 class="contact-heading font-pesta">Get In touch</h2>
+
+                        <div class="contact-info-cards">
+                            <!-- Contact No -->
+                            <div class="contact-info-item contact-info-item-first">
+                                <div class="contact-lead-line"></div>
+                                <div class="contact-info-box">
+                                    <div class="tool-icon-24">
+                                        <img src="assets/be2f6d3b57b0702503c3ce4e3ded6f5434b72e0a.svg" alt="" />
+                                    </div>
+                                    <div class="contact-info-text w-169 font-consolas">
+                                        <p class="contact-info-label">Contact No</p>
+                                        <p class="contact-info-value">01777813815</p>
+                                    </div>
+                                </div>
+                                <!-- Spider-Man Kitten & Quote anchored to Contact No lead line -->
+                                <div class="spider-kitten" aria-hidden="true">
+                                    <div class="spider-kitten-track">
+                                        <img src="assets/2840c0e402dbe6ce3ca4cbcd5d4fde6421eb796d.png" alt="" />
+                                        <div class="spider-quote-wrapper">
+                                            <div class="spider-quote-rotated font-patrick">
+                                                <p>“With great meowww,</p>
+                                                <p>comes great fish”</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="contact-info-item">
+                                <div class="contact-lead-line"></div>
+                                <div class="contact-info-box">
+                                    <div class="tool-icon-24">
+                                        <img src="assets/744cdc719be346a60ed4c7ec875fdf59cb8e736a.svg" alt="" />
+                                    </div>
+                                    <div class="contact-info-text w-247 font-consolas">
+                                        <p class="contact-info-label">Email</p>
+                                        <a href="mailto:afiah.work03@gmail.com" class="contact-info-value"
+                                            style="color: inherit; text-decoration: none;">afiah.work03@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="contact-info-item">
+                                <div class="contact-lead-line"></div>
+                                <div class="contact-info-box">
+                                    <div class="tool-icon-24">
+                                        <img src="assets/3f4b3e178bc287d948d0a96776a0210b139005ab.svg" alt="" />
+                                    </div>
+                                    <div class="contact-info-text w-169 font-consolas">
+                                        <p class="contact-info-label">Location</p>
+                                        <p class="contact-info-value">Dhaka</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card reveal-on-scroll">
+                        <div class="contact-card-left">
+                            <div class="contact-card-prompt font-pesta">
+                                <p>Want to send </p>
+                                <p>a message?</p>
+                            </div>
+                            <div class="contact-card-findme">
+                                <p class="findme-label font-consolas">Find me</p>
+                                <div class="findme-icons">
+                                    <a href="#contact" class="findme-icon-btn" aria-label="LinkedIn">
+                                        <img src="assets/d3a7ae92757c9e11db82888f36ce1d9c38672b22.svg" alt="" />
+                                    </a>
+                                    <a href="#contact" class="findme-icon-btn" aria-label="GitHub">
+                                        <img src="assets/fe02f6c080a74229e76f18cc456c72732a934003.svg" alt="" />
+                                    </a>
+                                    <a href="#contact" class="findme-icon-btn" aria-label="Facebook">
+                                        <img src="assets/b0eac89079d2b4dab4233eb72603630aca003585.svg" alt="" />
+                                    </a>
+                                    <a href="#contact" class="findme-icon-btn" aria-label="Instagram">
+                                        <img src="assets/c7bc869b21548951c6bb4088393200b29b8208e8.svg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="contact-form-right" action="https://formsubmit.co/afiah.work03@gmail.com"
+                            method="POST">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_captcha" value="false" />
+                            <input type="hidden" name="_template" value="table" />
+                            <input type="hidden" name="_subject" value="New Message from Portfolio Website!" />
+
+                            <div class="form-fields-stack">
+                                <div class="form-group">
+                                    <label class="form-label text-pure-white font-consolas"
+                                        for="input-name">Name</label>
+                                    <input id="input-name" name="name" type="text" class="form-input"
+                                        placeholder="Enter Your full name" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label font-consolas" for="input-email">Email</label>
+                                    <input id="input-email" name="email" type="email" class="form-input"
+                                        placeholder="Enter Your email address" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label font-consolas" for="input-phone">Phone Number</label>
+                                    <input id="input-phone" name="phone" type="tel" class="form-input"
+                                        placeholder="Enter Your contact number" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label font-consolas" for="input-subject">Subject</label>
+                                    <input id="input-subject" name="subject" type="text" class="form-input"
+                                        placeholder="Enter message subject" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label font-consolas" for="input-message">Message</label>
+                                    <textarea id="input-message" name="message" class="form-textarea"
+                                        placeholder="Write down your message" required></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-send-message">
+                                <div class="btn-wrap">
+                                    <span class="font-consolas btn-text">Send Message</span>
+                                </div>
+                                <img class="icon-16" src="assets/d77f3251068685202a40d02a5b1209b9913a753b.svg" alt="" />
+                            </button>
+                            <div class="form-status-message" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navbar Scrolled & Active Link ScrollSpy -->
+    <script>
+        const navbar = document.querySelector('.navbar');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section[id]');
+
+        function onScroll() {
+            if (navbar) {
+                if (window.scrollY > 30) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+
+            let activeId = '';
+            sections.forEach(sec => {
+                const rect = sec.getBoundingClientRect();
+                if (rect.top <= 200 && rect.bottom > 100) {
+                    activeId = sec.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href') || '';
+                if (activeId && (href === '#' + activeId || href.endsWith('#' + activeId))) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('load', onScroll);
+        onScroll();
+
+        // Progressive Enhancement & Scroll Reveal IntersectionObserver
+        if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.documentElement.classList.add('motion-ready');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -40px 0px',
+                threshold: 0.1
+            };
+
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-revealed');
+
+                        // Trigger single settling sway for decorative characters
+                        if (entry.target.classList.contains('about-text') || entry.target.closest('#about')) {
+                            const yarnCat = document.querySelector('.about-yarn-cat');
+                            if (yarnCat && !yarnCat.classList.contains('is-animated')) {
+                                yarnCat.classList.add('is-animated');
+                            }
+                        }
+                        if (entry.target.closest('#contact') || entry.target.classList.contains('contact-top-block')) {
+                            const spiderKitten = document.querySelector('.spider-kitten');
+                            if (spiderKitten && !spiderKitten.classList.contains('is-animated')) {
+                                spiderKitten.classList.add('is-animated');
+                            }
+                        }
+
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('is-revealed');
+                } else {
+                    revealObserver.observe(el);
+                }
+            });
+        }
+
+        // Interactive Mouse Pointer Follow for Decorative Character Illustrations
+        function setupPointerSway(config) {
+            if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+            const section = document.querySelector(config.sectionSelector);
+            const trackEl = document.querySelector(config.trackSelector);
+            if (!section || !trackEl) return;
+
+            let targetX = 0, targetRot = 0;
+            let currentX = 0, currentRot = 0;
+            let velX = 0, velRot = 0;
+            let isMouseInside = false;
+            let isVisible = true;
+            let rafId = null;
+
+            const stiffness = 0.06;
+            const damping = 0.82;
+
+            function step() {
+                const forceX = (targetX - currentX) * stiffness;
+                velX = (velX + forceX) * damping;
+                currentX += velX;
+
+                const forceRot = (targetRot - currentRot) * stiffness;
+                velRot = (velRot + forceRot) * damping;
+                currentRot += velRot;
+
+                const isSettled = !isMouseInside &&
+                    Math.abs(targetX - currentX) < 0.008 && Math.abs(velX) < 0.008 &&
+                    Math.abs(targetRot - currentRot) < 0.008 && Math.abs(velRot) < 0.008;
+
+                if (isSettled) {
+                    currentX = 0;
+                    currentRot = 0;
+                    velX = 0;
+                    velRot = 0;
+                    trackEl.style.transform = '';
+                    rafId = null;
+                    return;
+                }
+
+                trackEl.style.transform = `translate3d(${currentX.toFixed(2)}px, 0, 0) rotate(${currentRot.toFixed(2)}deg)`;
+
+                if (isVisible) {
+                    rafId = requestAnimationFrame(step);
+                } else {
+                    rafId = null;
+                }
+            }
+
+            function start() {
+                if (!rafId && isVisible) {
+                    rafId = requestAnimationFrame(step);
+                }
+            }
+
+            function onMouseMove(e) {
+                isMouseInside = true;
+                const rect = section.getBoundingClientRect();
+                if (rect.width <= 0) return;
+                const normX = Math.max(-1, Math.min(1, ((e.clientX - rect.left) / rect.width - 0.5) * 2));
+                targetX = normX * config.maxX;
+                targetRot = normX * config.maxRot;
+                start();
+            }
+
+            function onMouseLeave() {
+                isMouseInside = false;
+                targetX = 0;
+                targetRot = 0;
+                start();
+            }
+
+            section.addEventListener('mousemove', onMouseMove, { passive: true });
+            section.addEventListener('mouseleave', onMouseLeave, { passive: true });
+
+            if ('IntersectionObserver' in window) {
+                const obs = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        isVisible = entry.isIntersecting;
+                        if (isVisible && (isMouseInside || currentX !== 0 || currentRot !== 0)) {
+                            start();
+                        } else if (!isVisible && rafId) {
+                            cancelAnimationFrame(rafId);
+                            rafId = null;
+                        }
+                    });
+                }, { threshold: 0.05 });
+                obs.observe(section);
+            }
+        }
+
+        setupPointerSway({
+            sectionSelector: '#about',
+            trackSelector: '.about-yarn-cat-track',
+            maxX: 6,
+            maxRot: 5
+        });
+
+        setupPointerSway({
+            sectionSelector: '#contact',
+            trackSelector: '.spider-kitten-track',
+            maxX: 8,
+            maxRot: 6
+        });
+
+        // Contact Form Handling (Submits directly to work email: afiah.work03@gmail.com)
+        const contactForm = document.querySelector('.contact-form-right');
+        if (contactForm) {
+            const statusMsg = contactForm.querySelector('.form-status-message');
+            const submitBtn = contactForm.querySelector('.btn-send-message');
+            const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+            const originalBtnText = btnText ? btnText.textContent : 'Send Message';
+
+            contactForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                const nameInput = document.getElementById('input-name');
+                const emailInput = document.getElementById('input-email');
+                const phoneInput = document.getElementById('input-phone');
+                const subjectInput = document.getElementById('input-subject');
+                const messageInput = document.getElementById('input-message');
+
+                const name = nameInput ? nameInput.value.trim() : '';
+                const email = emailInput ? emailInput.value.trim() : '';
+                const phone = phoneInput ? phoneInput.value.trim() : '';
+                const subject = subjectInput ? subjectInput.value.trim() : '';
+                const message = messageInput ? messageInput.value.trim() : '';
+
+                if (!name || !email || !subject || !message) {
+                    if (statusMsg) {
+                        statusMsg.textContent = 'Please fill out all required fields (Name, Email, Subject, Message).';
+                        statusMsg.className = 'form-status-message is-error';
+                    }
+                    return;
+                }
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    if (statusMsg) {
+                        statusMsg.textContent = 'Please enter a valid email address.';
+                        statusMsg.className = 'form-status-message is-error';
+                    }
+                    return;
+                }
+
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    if (btnText) btnText.textContent = 'Sending...';
+                }
+                if (statusMsg) {
+                    statusMsg.textContent = 'Sending message...';
+                    statusMsg.className = 'form-status-message is-info';
+                }
+
+                try {
+                    const response = await fetch('https://formsubmit.co/ajax/afiah.work03@gmail.com', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            name: name,
+                            email: email,
+                            phone: phone || 'Not provided',
+                            _subject: `[Portfolio Contact] ${subject} - from ${name}`,
+                            message: message,
+                            _template: 'table',
+                            _captcha: 'false'
+                        })
+                    });
+
+                    const data = await response.json();
+                    console.log('FormSubmit response:', response.status, data);
+
+                    if (
+                        response.ok &&
+                        (data.success === 'true' || data.success === true)
+                    ) {
+                        if (statusMsg) {
+                            if (data.message && data.message.toLowerCase().includes('activate')) {
+                                statusMsg.textContent = 'Form submitted! Please check afiah.work03@gmail.com to confirm form activation for the first time.';
+                                statusMsg.className = 'form-status-message is-info';
+                            } else {
+                                statusMsg.textContent = 'Thank you! Your message has been sent successfully.';
+                                statusMsg.className = 'form-status-message is-success';
+                            }
+                        }
+                        contactForm.reset();
+                    } else {
+                        throw new Error(data.message || 'Submission error');
+                    }
+                } catch (err) {
+                    console.error('Contact form submission error:', err);
+                    if (statusMsg) {
+                        statusMsg.innerHTML = 'Unable to send message right now. You can email me directly at <a href="mailto:afiah.work03@gmail.com" style="color: inherit; text-decoration: underline;">afiah.work03@gmail.com</a>';
+                        statusMsg.className = 'form-status-message is-error';
+                    }
+                } finally {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        if (btnText) btnText.textContent = originalBtnText;
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

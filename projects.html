@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects — Afiah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Patrick+Hand+SC&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="page-viewport">
+        <div class="landing-blue">
+            <div class="main-stack">
+                <!-- ==========================================
+                     1. PROJECTS PAGE HERO SECTION (6200:3826)
+                     ========================================== -->
+                <section class="projects-hero-section">
+                    <!-- Top Navigation Bar (6200:3829) -->
+                    <header class="navbar">
+                        <a href="index.html" class="logo-wrapper" aria-label="Afiah Home">
+                            <div class="logo-rotated">
+                                <div class="logo-box">
+                                    <p class="logo-letter font-pesta">A</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <button class="mobile-menu-toggle" type="button" aria-label="Toggle navigation"
+                            aria-expanded="false"
+                            onclick="this.parentElement.classList.toggle('nav-open'); this.setAttribute('aria-expanded', this.parentElement.classList.contains('nav-open'))">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <nav class="nav-links font-consolas"
+                            onclick="if(window.innerWidth <= 900){ this.parentElement.classList.remove('nav-open'); }">
+
+                            <a href="projects.html" class="active">Projects</a>
+                            <a href="index.html#experience">Experience</a>
+                            <a href="index.html#services">Services</a>
+                            <a href="index.html#education">Education</a>
+                            <a href="index.html#about">About</a>
+                            <a href="#contact">Contact</a>
+                        </nav>
+
+                        <div class="nav-socials">
+                            <a href="#contact" class="nav-social-btn" aria-label="Facebook">
+                                <img src="assets/379a6d1ee390296889a320eb31389439bdc3be6d.svg" alt="" />
+                            </a>
+                            <a href="#contact" class="nav-social-btn" aria-label="Instagram">
+                                <img src="assets/dbd92464af5bd647336b0ce903cea9cbbe1309cc.svg" alt="" />
+                            </a>
+                            <a href="#contact" class="nav-social-btn" aria-label="LinkedIn">
+                                <img src="assets/37628bb1a5034a90aa3f23297552110ed2be14b8.svg" alt="" />
+                            </a>
+                            <a href="#contact" class="nav-social-btn" aria-label="GitHub">
+                                <img src="assets/c3e5aa4423b067c50cb81807f64a7366447760ed.svg" alt="" />
+                            </a>
+                        </div>
+                    </header>
+
+                    <!-- Large Title & Peeking Kitten Wrapper -->
+                    <div class="projects-hero-title-container">
+                        <h1 class="projects-hero-title font-pesta">
+                            <span class="projects-hero-word">MY</span>
+                            <span class="projects-hero-word"><span
+                                    class="letter-p-wrapper">P<!-- Peeking Kitten Head perched above letter P in PROJECTS (6217:5677 / 6220:5743) --><span
+                                        class="projects-hero-peeking-cat-head" aria-hidden="true"><img
+                                            src="assets/b2b2a59df410bdd2ad9d5f50ae3d4344132956b6.png"
+                                            alt="" /></span><!-- Peeking Kitten Tail hanging inside letter P loop (6217:5678 / 6220:5744) --><span
+                                        class="projects-hero-peeking-cat-tail" aria-hidden="true"><img
+                                            src="assets/b2b2a59df410bdd2ad9d5f50ae3d4344132956b6.png"
+                                            alt="" /></span></span>ROJECTS</span>
+                        </h1>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+                     2. ALL PROJECTS GRID SECTION (6200:3849)
+                     ========================================== -->
+                <section class="all-projects-section">
+                    <div class="all-projects-inner">
+                        <!-- Filter Tabs / Badges (6200:3851) -->
+                        <div class="filter-tabs-bar" role="tablist" aria-label="Project Categories">
+                            <button type="button" class="filter-tab active font-consolas" role="tab"
+                                aria-selected="true" aria-pressed="true"
+                                onclick="filterProjects('all', this)">All</button>
+                            <button type="button" class="filter-tab font-consolas" role="tab" aria-selected="false"
+                                aria-pressed="false" onclick="filterProjects('mobile', this)">Mobile App</button>
+                            <button type="button" class="filter-tab font-consolas" role="tab" aria-selected="false"
+                                aria-pressed="false" onclick="filterProjects('web', this)">Web Design</button>
+                            <button type="button" class="filter-tab font-consolas" role="tab" aria-selected="false"
+                                aria-pressed="false" onclick="filterProjects('landing', this)">Landing Page</button>
+                            <button type="button" class="filter-tab font-consolas" role="tab" aria-selected="false"
+                                aria-pressed="false" onclick="filterProjects('websites', this)">Websites</button>
+                        </div>
+
+                        <!-- 4 Rows × 3 Columns = 12 Project Cards (6200:3862) -->
+                        <div class="projects-grid">
+                            <!-- Row 1 -->
+                            <div class="projects-row">
+                                <!-- Card 1 -->
+                                <article class="project-card reveal-on-scroll" data-category="web websites">
+                                    <div class="project-thumb">
+                                        <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                            alt="Shoukhin Haat" />
+                                        <div class="project-hover-overlay">
+                                            <div class="project-hover-actions">
+                                                <div class="project-action-btn" title="Live Link">
+                                                    <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                        alt="Link" />
+                                                </div>
+                                                <div class="project-action-btn" title="Figma Design">
+                                                    <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                        alt="Figma" />
+                                                </div>
+                                                <div class="project-action-btn" title="View Prototype">
+                                                    <img src="assets/prototype.svg"
+                                                        alt="Prototype" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <div class="project-titles">
+                                            <p class="project-name font-pesta">Shoukhin Haat</p>
+                                            <p class="project-category font-consolas">E-commerce Platform</p>
+                                        </div>
+                                        <div class="project-badges">
+                                            <div class="project-badge"><span class="font-consolas">Wireframing</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">UI/UX Design</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">Web
+                                                    development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Card 2 -->
+                                <article class="project-card reveal-on-scroll" data-category="mobile web">
+                                    <div class="project-thumb">
+                                        <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                            alt="Shoukhin Haat" />
+                                        <div class="project-hover-overlay">
+                                            <div class="project-hover-actions">
+                                                <div class="project-action-btn" title="Live Link">
+                                                    <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                        alt="Link" />
+                                                </div>
+                                                <div class="project-action-btn" title="Figma Design">
+                                                    <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                        alt="Figma" />
+                                                </div>
+                                                <div class="project-action-btn" title="View Prototype">
+                                                    <img src="assets/prototype.svg"
+                                                        alt="Prototype" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <div class="project-titles">
+                                            <p class="project-name font-pesta">Shoukhin Haat</p>
+                                            <p class="project-category font-consolas">E-commerce Platform</p>
+                                        </div>
+                                        <div class="project-badges">
+                                            <div class="project-badge"><span class="font-consolas">Wireframing</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">UI/UX Design</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">Web
+                                                    development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Card 3 -->
+                                <article class="project-card reveal-on-scroll" data-category="landing websites">
+                                    <div class="project-thumb">
+                                        <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                            alt="Shoukhin Haat" />
+                                        <div class="project-hover-overlay">
+                                            <div class="project-hover-actions">
+                                                <div class="project-action-btn" title="Live Link">
+                                                    <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                        alt="Link" />
+                                                </div>
+                                                <div class="project-action-btn" title="Figma Design">
+                                                    <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                        alt="Figma" />
+                                                </div>
+                                                <div class="project-action-btn" title="View Prototype">
+                                                    <img src="assets/prototype.svg"
+                                                        alt="Prototype" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <div class="project-titles">
+                                            <p class="project-name font-pesta">Shoukhin Haat</p>
+                                            <p class="project-category font-consolas">E-commerce Platform</p>
+                                        </div>
+                                        <div class="project-badges">
+                                            <div class="project-badge"><span class="font-consolas">Wireframing</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">UI/UX Design</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">Web
+                                                    development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Row 2 -->
+                            <div class="projects-row">
+                                <!-- Card 4 -->
+                                <article class="project-card reveal-on-scroll" data-category="mobile">
+                                    <div class="project-thumb">
+                                        <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                            alt="Shoukhin Haat" />
+                                        <div class="project-hover-overlay">
+                                            <div class="project-hover-actions">
+                                                <div class="project-action-btn" title="Live Link">
+                                                    <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                        alt="Link" />
+                                                </div>
+                                                <div class="project-action-btn" title="Figma Design">
+                                                    <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                        alt="Figma" />
+                                                </div>
+                                                <div class="project-action-btn" title="View Prototype">
+                                                    <img src="assets/prototype.svg"
+                                                        alt="Prototype" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <div class="project-titles">
+                                            <p class="project-name font-pesta">Shoukhin Haat</p>
+                                            <p class="project-category font-consolas">E-commerce Platform</p>
+                                        </div>
+                                        <div class="project-badges">
+                                            <div class="project-badge"><span class="font-consolas">Wireframing</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">UI/UX Design</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">Web
+                                                    development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Card 5 -->
+                                <article class="project-card reveal-on-scroll" data-category="web landing">
+                                    <div class="project-thumb">
+                                        <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                            alt="Shoukhin Haat" />
+                                        <div class="project-hover-overlay">
+                                            <div class="project-hover-actions">
+                                                <div class="project-action-btn" title="Live Link">
+                                                    <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                        alt="Link" />
+                                                </div>
+                                                <div class="project-action-btn" title="Figma Design">
+                                                    <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                        alt="Figma" />
+                                                </div>
+                                                <div class="project-action-btn" title="View Prototype">
+                                                    <img src="assets/prototype.svg"
+                                                        alt="Prototype" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <div class="project-titles">
+                                            <p class="project-name font-pesta">Shoukhin Haat</p>
+                                            <p class="project-category font-consolas">E-commerce Platform</p>
+                                        </div>
+                                        <div class="project-badges">
+                                            <div class="project-badge"><span class="font-consolas">Wireframing</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">UI/UX Design</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">Web
+                                                    development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Card 6 -->
+                                <article class="project-card reveal-on-scroll" data-category="websites">
+                                    <div class="project-thumb">
+                                        <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                            alt="Shoukhin Haat" />
+                                        <div class="project-hover-overlay">
+                                            <div class="project-hover-actions">
+                                                <div class="project-action-btn" title="Live Link">
+                                                    <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                        alt="Link" />
+                                                </div>
+                                                <div class="project-action-btn" title="Figma Design">
+                                                    <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                        alt="Figma" />
+                                                </div>
+                                                <div class="project-action-btn" title="View Prototype">
+                                                    <img src="assets/prototype.svg"
+                                                        alt="Prototype" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <div class="project-titles">
+                                            <p class="project-name font-pesta">Shoukhin Haat</p>
+                                            <p class="project-category font-consolas">E-commerce Platform</p>
+                                        </div>
+                                        <div class="project-badges">
+                                            <div class="project-badge"><span class="font-consolas">Wireframing</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">UI/UX Design</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">Web
+                                                    development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Row 3 -->
+                            <div class="projects-row">
+                                <!-- Card 7 -->
+                                <article class="project-card reveal-on-scroll" data-category="mobile landing">
+                                    <div class="project-thumb">
+                                        <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                            alt="Shoukhin Haat" />
+                                        <div class="project-hover-overlay">
+                                            <div class="project-hover-actions">
+                                                <div class="project-action-btn" title="Live Link">
+                                                    <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                        alt="Link" />
+                                                </div>
+                                                <div class="project-action-btn" title="Figma Design">
+                                                    <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                        alt="Figma" />
+                                                </div>
+                                                <div class="project-action-btn" title="View Prototype">
+                                                    <img src="assets/prototype.svg"
+                                                        alt="Prototype" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <div class="project-titles">
+                                            <p class="project-name font-pesta">Shoukhin Haat</p>
+                                            <p class="project-category font-consolas">E-commerce Platform</p>
+                                        </div>
+                                        <div class="project-badges">
+                                            <div class="project-badge"><span class="font-consolas">Wireframing</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">UI/UX Design</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">Web
+                                                    development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Card 8 -->
+                                <article class="project-card reveal-on-scroll" data-category="web websites">
+                                    <div class="project-thumb">
+                                        <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                            alt="Shoukhin Haat" />
+                                        <div class="project-hover-overlay">
+                                            <div class="project-hover-actions">
+                                                <div class="project-action-btn" title="Live Link">
+                                                    <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                        alt="Link" />
+                                                </div>
+                                                <div class="project-action-btn" title="Figma Design">
+                                                    <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                        alt="Figma" />
+                                                </div>
+                                                <div class="project-action-btn" title="View Prototype">
+                                                    <img src="assets/prototype.svg"
+                                                        alt="Prototype" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <div class="project-titles">
+                                            <p class="project-name font-pesta">Shoukhin Haat</p>
+                                            <p class="project-category font-consolas">E-commerce Platform</p>
+                                        </div>
+                                        <div class="project-badges">
+                                            <div class="project-badge"><span class="font-consolas">Wireframing</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">UI/UX Design</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">Web
+                                                    development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Card 9 -->
+                                <article class="project-card reveal-on-scroll" data-category="mobile websites">
+                                    <div class="project-thumb">
+                                        <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                            alt="Shoukhin Haat" />
+                                        <div class="project-hover-overlay">
+                                            <div class="project-hover-actions">
+                                                <div class="project-action-btn" title="Live Link">
+                                                    <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                        alt="Link" />
+                                                </div>
+                                                <div class="project-action-btn" title="Figma Design">
+                                                    <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                        alt="Figma" />
+                                                </div>
+                                                <div class="project-action-btn" title="View Prototype">
+                                                    <img src="assets/prototype.svg"
+                                                        alt="Prototype" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <div class="project-titles">
+                                            <p class="project-name font-pesta">Shoukhin Haat</p>
+                                            <p class="project-category font-consolas">E-commerce Platform</p>
+                                        </div>
+                                        <div class="project-badges">
+                                            <div class="project-badge"><span class="font-consolas">Wireframing</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">UI/UX Design</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">Web
+                                                    development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Row 4 -->
+                            <div class="projects-row">
+                                <!-- Card 10 -->
+                                <article class="project-card reveal-on-scroll" data-category="landing">
+                                    <div class="project-thumb">
+                                        <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                            alt="Shoukhin Haat" />
+                                        <div class="project-hover-overlay">
+                                            <div class="project-hover-actions">
+                                                <div class="project-action-btn" title="Live Link">
+                                                    <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                        alt="Link" />
+                                                </div>
+                                                <div class="project-action-btn" title="Figma Design">
+                                                    <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                        alt="Figma" />
+                                                </div>
+                                                <div class="project-action-btn" title="View Prototype">
+                                                    <img src="assets/prototype.svg"
+                                                        alt="Prototype" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <div class="project-titles">
+                                            <p class="project-name font-pesta">Shoukhin Haat</p>
+                                            <p class="project-category font-consolas">E-commerce Platform</p>
+                                        </div>
+                                        <div class="project-badges">
+                                            <div class="project-badge"><span class="font-consolas">Wireframing</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">UI/UX Design</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">Web
+                                                    development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Card 11 -->
+                                <article class="project-card reveal-on-scroll" data-category="web">
+                                    <div class="project-thumb">
+                                        <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                            alt="Shoukhin Haat" />
+                                        <div class="project-hover-overlay">
+                                            <div class="project-hover-actions">
+                                                <div class="project-action-btn" title="Live Link">
+                                                    <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                        alt="Link" />
+                                                </div>
+                                                <div class="project-action-btn" title="Figma Design">
+                                                    <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                        alt="Figma" />
+                                                </div>
+                                                <div class="project-action-btn" title="View Prototype">
+                                                    <img src="assets/prototype.svg"
+                                                        alt="Prototype" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <div class="project-titles">
+                                            <p class="project-name font-pesta">Shoukhin Haat</p>
+                                            <p class="project-category font-consolas">E-commerce Platform</p>
+                                        </div>
+                                        <div class="project-badges">
+                                            <div class="project-badge"><span class="font-consolas">Wireframing</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">UI/UX Design</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">Web
+                                                    development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Card 12 -->
+                                <article class="project-card reveal-on-scroll" data-category="mobile web">
+                                    <div class="project-thumb">
+                                        <img src="assets/5d1331537a0e617a03ea0595f025617199d1122d.png"
+                                            alt="Shoukhin Haat" />
+                                        <div class="project-hover-overlay">
+                                            <div class="project-hover-actions">
+                                                <div class="project-action-btn" title="Live Link">
+                                                    <img src="assets/e2e1d299816c92664c8733382a8019e7f34b01ed.svg"
+                                                        alt="Link" />
+                                                </div>
+                                                <div class="project-action-btn" title="Figma Design">
+                                                    <img src="assets/1ffa1e058c78ac866b01cb07eef81d035372bbfa.svg"
+                                                        alt="Figma" />
+                                                </div>
+                                                <div class="project-action-btn" title="View Prototype">
+                                                    <img src="assets/prototype.svg"
+                                                        alt="Prototype" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-info">
+                                        <div class="project-titles">
+                                            <p class="project-name font-pesta">Shoukhin Haat</p>
+                                            <p class="project-category font-consolas">E-commerce Platform</p>
+                                        </div>
+                                        <div class="project-badges">
+                                            <div class="project-badge"><span class="font-consolas">Wireframing</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">UI/UX Design</span>
+                                            </div>
+                                            <div class="project-badge"><span class="font-consolas">Web
+                                                    development</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+                     3. GET IN TOUCH SECTION (6200:4028)
+                     ========================================== -->
+                <section id="contact" class="contact-section">
+                    <p class="contact-watermark font-pesta" aria-hidden="true">Afiah</p>
+
+                    <div class="contact-top-block reveal-on-scroll">
+                        <h2 class="contact-heading font-pesta">Get In touch</h2>
+
+                        <div class="contact-info-cards">
+                            <!-- Contact No -->
+                            <div class="contact-info-item contact-info-item-first">
+                                <div class="contact-lead-line"></div>
+                                <div class="contact-info-box">
+                                    <div class="tool-icon-24">
+                                        <img src="assets/be2f6d3b57b0702503c3ce4e3ded6f5434b72e0a.svg" alt="" />
+                                    </div>
+                                    <div class="contact-info-text w-169 font-consolas">
+                                        <p class="contact-info-label">Contact No</p>
+                                        <p class="contact-info-value">01777813815</p>
+                                    </div>
+                                </div>
+                                <!-- Spider-Man Kitten & Quote anchored to Contact No lead line -->
+                                <div class="spider-kitten" aria-hidden="true">
+                                    <div class="spider-kitten-track">
+                                        <img src="assets/2840c0e402dbe6ce3ca4cbcd5d4fde6421eb796d.png" alt="" />
+                                        <div class="spider-quote-wrapper">
+                                            <div class="spider-quote-rotated font-patrick">
+                                                <p>“With great meowww,</p>
+                                                <p>comes great fish”</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="contact-info-item">
+                                <div class="contact-lead-line"></div>
+                                <div class="contact-info-box">
+                                    <div class="tool-icon-24">
+                                        <img src="assets/744cdc719be346a60ed4c7ec875fdf59cb8e736a.svg" alt="" />
+                                    </div>
+                                    <div class="contact-info-text w-247 font-consolas">
+                                        <p class="contact-info-label">Email</p>
+                                        <p class="contact-info-value">afiah.work03@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="contact-info-item">
+                                <div class="contact-lead-line"></div>
+                                <div class="contact-info-box">
+                                    <div class="tool-icon-24">
+                                        <img src="assets/3f4b3e178bc287d948d0a96776a0210b139005ab.svg" alt="" />
+                                    </div>
+                                    <div class="contact-info-text w-169 font-consolas">
+                                        <p class="contact-info-label">Location</p>
+                                        <p class="contact-info-value">Dhaka</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card reveal-on-scroll">
+                        <div class="contact-card-left">
+                            <div class="contact-card-prompt font-pesta">
+                                <p>Want to send </p>
+                                <p>a message?</p>
+                            </div>
+                            <div class="contact-card-findme">
+                                <p class="findme-label font-consolas">Find me</p>
+                                <div class="findme-icons">
+                                    <a href="#contact" class="findme-icon-btn" aria-label="LinkedIn">
+                                        <img src="assets/d3a7ae92757c9e11db82888f36ce1d9c38672b22.svg" alt="" />
+                                    </a>
+                                    <a href="#contact" class="findme-icon-btn" aria-label="GitHub">
+                                        <img src="assets/fe02f6c080a74229e76f18cc456c72732a934003.svg" alt="" />
+                                    </a>
+                                    <a href="#contact" class="findme-icon-btn" aria-label="Facebook">
+                                        <img src="assets/b0eac89079d2b4dab4233eb72603630aca003585.svg" alt="" />
+                                    </a>
+                                    <a href="#contact" class="findme-icon-btn" aria-label="Instagram">
+                                        <img src="assets/c7bc869b21548951c6bb4088393200b29b8208e8.svg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="contact-form-right" onsubmit="event.preventDefault();">
+                            <div class="form-fields-stack">
+                                <div class="form-group">
+                                    <label class="form-label text-pure-white font-consolas"
+                                        for="input-name">Name</label>
+                                    <input id="input-name" type="text" class="form-input"
+                                        placeholder="Enter Your full name" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label font-consolas" for="input-email">Email</label>
+                                    <input id="input-email" type="email" class="form-input"
+                                        placeholder="Enter Your email address" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label font-consolas" for="input-phone">Phone Number</label>
+                                    <input id="input-phone" type="tel" class="form-input"
+                                        placeholder="Enter Your contact number" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label font-consolas" for="input-subject">Subject</label>
+                                    <input id="input-subject" type="text" class="form-input"
+                                        placeholder="Enter message subject" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label font-consolas" for="input-message">Message</label>
+                                    <textarea id="input-message" class="form-textarea"
+                                        placeholder="Write down your message"></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-send-message">
+                                <div class="btn-wrap">
+                                    <span class="font-consolas">Send Message</span>
+                                </div>
+                                <img class="icon-16" src="assets/d77f3251068685202a40d02a5b1209b9913a753b.svg" alt="" />
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Filter Script -->
+    <script>
+        let activeFilterToken = 0;
+        function filterProjects(category, btn) {
+            if (btn.classList.contains('active') && !btn.dataset.reapply) return;
+            const thisToken = ++activeFilterToken;
+
+            document.querySelectorAll('.filter-tab').forEach(t => {
+                t.classList.remove('active');
+                t.setAttribute('aria-selected', 'false');
+                t.setAttribute('aria-pressed', 'false');
+            });
+            btn.classList.add('active');
+            btn.setAttribute('aria-selected', 'true');
+            btn.setAttribute('aria-pressed', 'true');
+
+            const grid = document.querySelector('.projects-grid');
+            if (grid) {
+                grid.style.minHeight = grid.offsetHeight + 'px';
+            }
+
+            const cards = Array.from(document.querySelectorAll('.all-projects-section .project-card'));
+
+            // Respect prefers-reduced-motion immediately
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                cards.forEach(card => {
+                    const cardCats = card.getAttribute('data-category') || '';
+                    const match = category === 'all' || cardCats.includes(category);
+                    card.style.display = match ? 'flex' : 'none';
+                    card.style.opacity = '1';
+                    card.style.transform = 'none';
+                });
+                if (grid) grid.style.minHeight = '';
+                return;
+            }
+
+            // Phase 1: Subtle fade-out
+            cards.forEach(card => {
+                card.style.transition = 'opacity 160ms var(--ease-out-smooth), transform 160ms var(--ease-out-smooth)';
+                card.style.opacity = '0';
+                card.style.transform = 'scale(0.97)';
+            });
+
+            setTimeout(() => {
+                if (thisToken !== activeFilterToken) return;
+
+                let visibleCount = 0;
+                cards.forEach(card => {
+                    const cardCats = card.getAttribute('data-category') || '';
+                    const match = category === 'all' || cardCats.includes(category);
+                    if (match) {
+                        card.style.display = 'flex';
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(12px)';
+                        const delay = Math.min(visibleCount * 35, 180);
+                        card.style.transitionDelay = delay + 'ms';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                        card.style.transitionDelay = '0ms';
+                    }
+                });
+
+                requestAnimationFrame(() => {
+                    if (thisToken !== activeFilterToken) return;
+                    cards.forEach(card => {
+                        if (card.style.display === 'flex') {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }
+                    });
+                });
+
+                setTimeout(() => {
+                    if (thisToken !== activeFilterToken) return;
+                    if (grid) grid.style.minHeight = '';
+                    cards.forEach(card => {
+                        card.style.transition = '';
+                        card.style.transitionDelay = '';
+                        card.style.opacity = '';
+                        card.style.transform = '';
+                    });
+                }, 220 + (visibleCount * 35));
+            }, 160);
+        }
+
+        // Sticky Navbar Scrolled & Active Link Handling
+        const navbar = document.querySelector('.navbar');
+        const contactSection = document.getElementById('contact');
+        const contactLink = document.querySelector('.nav-links a[href="#contact"]');
+        const projectsLink = document.querySelector('.nav-links a[href="projects.html"]');
+
+        function onProjectsScroll() {
+            if (navbar) {
+                if (window.scrollY > 30) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+
+            if (contactSection && contactLink && projectsLink) {
+                const scrollPos = window.scrollY + 140;
+                if (scrollPos >= contactSection.offsetTop) {
+                    contactLink.classList.add('active');
+                    projectsLink.classList.remove('active');
+                } else {
+                    contactLink.classList.remove('active');
+                    projectsLink.classList.add('active');
+                }
+            }
+        }
+
+        window.addEventListener('scroll', onProjectsScroll, { passive: true });
+        window.addEventListener('load', onProjectsScroll);
+        onProjectsScroll();
+
+        // Progressive Enhancement & Scroll Reveal IntersectionObserver
+        if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.documentElement.classList.add('motion-ready');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -40px 0px',
+                threshold: 0.1
+            };
+
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-revealed');
+
+                        if (entry.target.closest('#contact') || entry.target.classList.contains('contact-top-block')) {
+                            const spiderKitten = document.querySelector('.spider-kitten');
+                            if (spiderKitten && !spiderKitten.classList.contains('is-animated')) {
+                                spiderKitten.classList.add('is-animated');
+                            }
+                        }
+
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('is-revealed');
+                } else {
+                    revealObserver.observe(el);
+                }
+            });
+        }
+
+        // Interactive Mouse Pointer Follow for Decorative Character Illustrations
+        function setupPointerSway(config) {
+            if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+            const section = document.querySelector(config.sectionSelector);
+            const trackEl = document.querySelector(config.trackSelector);
+            if (!section || !trackEl) return;
+
+            let targetX = 0, targetRot = 0;
+            let currentX = 0, currentRot = 0;
+            let velX = 0, velRot = 0;
+            let isMouseInside = false;
+            let isVisible = true;
+            let rafId = null;
+
+            const stiffness = 0.06;
+            const damping = 0.82;
+
+            function step() {
+                const forceX = (targetX - currentX) * stiffness;
+                velX = (velX + forceX) * damping;
+                currentX += velX;
+
+                const forceRot = (targetRot - currentRot) * stiffness;
+                velRot = (velRot + forceRot) * damping;
+                currentRot += velRot;
+
+                const isSettled = !isMouseInside &&
+                    Math.abs(targetX - currentX) < 0.008 && Math.abs(velX) < 0.008 &&
+                    Math.abs(targetRot - currentRot) < 0.008 && Math.abs(velRot) < 0.008;
+
+                if (isSettled) {
+                    currentX = 0;
+                    currentRot = 0;
+                    velX = 0;
+                    velRot = 0;
+                    trackEl.style.transform = '';
+                    rafId = null;
+                    return;
+                }
+
+                trackEl.style.transform = `translate3d(${currentX.toFixed(2)}px, 0, 0) rotate(${currentRot.toFixed(2)}deg)`;
+
+                if (isVisible) {
+                    rafId = requestAnimationFrame(step);
+                } else {
+                    rafId = null;
+                }
+            }
+
+            function start() {
+                if (!rafId && isVisible) {
+                    rafId = requestAnimationFrame(step);
+                }
+            }
+
+            function onMouseMove(e) {
+                isMouseInside = true;
+                const rect = section.getBoundingClientRect();
+                if (rect.width <= 0) return;
+                const normX = Math.max(-1, Math.min(1, ((e.clientX - rect.left) / rect.width - 0.5) * 2));
+                targetX = normX * config.maxX;
+                targetRot = normX * config.maxRot;
+                start();
+            }
+
+            function onMouseLeave() {
+                isMouseInside = false;
+                targetX = 0;
+                targetRot = 0;
+                start();
+            }
+
+            section.addEventListener('mousemove', onMouseMove, { passive: true });
+            section.addEventListener('mouseleave', onMouseLeave, { passive: true });
+
+            if ('IntersectionObserver' in window) {
+                const obs = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        isVisible = entry.isIntersecting;
+                        if (isVisible && (isMouseInside || currentX !== 0 || currentRot !== 0)) {
+                            start();
+                        } else if (!isVisible && rafId) {
+                            cancelAnimationFrame(rafId);
+                            rafId = null;
+                        }
+                    });
+                }, { threshold: 0.05 });
+                obs.observe(section);
+            }
+        }
+
+        setupPointerSway({
+            sectionSelector: '#contact',
+            trackSelector: '.spider-kitten-track',
+            maxX: 8,
+            maxRot: 6
+        });
+    </script>
+</body>
+
+</html>
